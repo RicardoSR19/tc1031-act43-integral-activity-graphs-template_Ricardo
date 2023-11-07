@@ -2,7 +2,7 @@
 //
 // File: main.cpp
 // Author: Ricardo Sierra Roa - A01709887
-// Date: 03/11/2023
+// Date: 06/11/2023
 //
 // =================================================================
 
@@ -23,7 +23,7 @@ vector<bool> visited;
 //
 // @param u vertice inicial del grafo que se va a explorar
 // @return void
-// @Complexity	O(V + E)
+// @Complexity	O(V Log (E))
 // =================================================================
 void dfs(int u) {
     visited[u] = true;
@@ -42,7 +42,7 @@ void dfs(int u) {
 // grafo para contar los abroles y el string contiene de manera 
 // individual las letras utilizadas en el grafo para contar las bellotas
 // @return pair<int, int>, numero de arboles y bellotas contadas
-// @Complexity	O(E + V + V log V)
+// @Complexity	O(n^2)
 // =================================================================
 pair<int, int> countTreeAcorn(const vector<string>& edges, const string& line) {
     int numTrees = 0;
@@ -126,7 +126,7 @@ int main() {
 
     getline(cin, line); // Leer la linea despues de los asteriscos, lista de puntos de los arboles
 
-    pair<int, int> results = countTreeAcorn(edges, line);
+    pair<int, int> results = countTreeAcorn(edges, line); // Complexity O(n^2)
 
     cout << "There are " << results.first << " tree(s) and " << results.second << " acorn(s)." << endl;
 
