@@ -7,7 +7,7 @@ En este repositorio encontrarás los archivos de entrada, así como las salidas 
 // =========================================================
 // File: main.cpp
 // Author: Ricardo Sierra Roa - A01709887
-// Date: 03/11/2023
+// Date: 06/11/2023
 // =========================================================
 ```
 <span style="text-decoration: underline;">De manera individual</span>, desarrolla la solución del siguiente problema:
